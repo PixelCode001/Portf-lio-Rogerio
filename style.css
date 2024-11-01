@@ -42,7 +42,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 12%;
+    padding: 1rem 12%; /* Ajustado para evitar corte */
     background: rgba(18, 18, 18, 0.8);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -127,9 +127,10 @@ h2 {
 
 /* Estilo do botão com maior contraste */
 .btn {
+    margin: 0 auto; /* Centraliza o botão */
     background: var(--highlight-color);
     border: 2px solid #fff;
-    color: var(--bg-color); /* Muda a cor do texto para preto */
+    color: var(--bg-color); /* Cor do texto do botão */
     padding: 1rem 2rem;
     border-radius: 5px;
     transition: background 0.3s ease, box-shadow 0.3s ease;
@@ -164,6 +165,12 @@ h2 {
 .social-icons a:hover {
     color: var(--highlight-color);
     background-color: var(--highlight-color); /* Muda a cor de fundo ao passar o mouse */
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center; /* Centraliza o botão */
+    width: 100%; /* Garante que o grupo ocupe toda a largura */
 }
 
 form {
