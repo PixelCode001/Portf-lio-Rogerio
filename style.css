@@ -125,10 +125,11 @@ h2 {
     box-shadow: 0 0 25px rgba(0, 255, 204, 0.7);
 }
 
+/* Estilo do botão com maior contraste */
 .btn {
     background: var(--highlight-color);
     border: 2px solid #fff;
-    color: var(--text-color);
+    color: var(--bg-color); /* Muda a cor do texto para preto */
     padding: 1rem 2rem;
     border-radius: 5px;
     transition: background 0.3s ease, box-shadow 0.3s ease;
@@ -139,6 +140,7 @@ h2 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Adicionando um círculo ao redor dos ícones sociais */
 .social-icons {
     display: flex;
     gap: 1rem;
@@ -149,10 +151,19 @@ h2 {
     color: var(--text-color);
     font-size: 2rem;
     transition: color 0.3s ease;
+    display: inline-flex; /* Para centralizar o ícone dentro do círculo */
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Largura do círculo */
+    height: 50px; /* Altura do círculo */
+    border-radius: 50%; /* Faz o círculo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo do círculo */
+    border: 2px solid var(--highlight-color); /* Borda verde */
 }
 
 .social-icons a:hover {
     color: var(--highlight-color);
+    background-color: var(--highlight-color); /* Muda a cor de fundo ao passar o mouse */
 }
 
 form {
@@ -175,38 +186,4 @@ form input:focus, form textarea:focus {
 
 form button {
     margin-top: 1rem;
-}
-
-/* Adicionando um círculo ao redor dos ícones sociais */
-.social-icons a {
-    color: var(--text-color);
-    font-size: 2rem;
-    transition: color 0.3s ease;
-    display: inline-flex; /* Para centralizar o ícone dentro do círculo */
-    justify-content: center;
-    align-items: center;
-    width: 50px; /* Largura do círculo */
-    height: 50px; /* Altura do círculo */
-    border-radius: 50%; /* Faz o círculo */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo do círculo */
-    border: 2px solid var(--highlight-color); /* Borda verde */
-}
-
-.social-icons a:hover {
-    color: var(--highlight-color);
-    background-color: var(--highlight-color); 
-}
-
-.btn {
-    background: var(--highlight-color);
-    border: 2px solid #fff;
-    color: var(--bg-color); 
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn:hover {
-    background: #00e6b3;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
